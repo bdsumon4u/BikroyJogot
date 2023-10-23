@@ -70,7 +70,7 @@
         .product-card__name {
             overflow: hidden;
             text-overflow: ellipsis;
-            white-space: nowrap;
+            /*white-space: nowrap;*/
         }
         .product-card__buttons {
             margin-right: -12px !important;
