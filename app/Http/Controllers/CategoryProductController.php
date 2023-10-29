@@ -18,7 +18,7 @@ class CategoryProductController extends Controller
         $per_page = $request->get('per_page', 15);
         $products = $category->products()
             ->whereIsActive(1)
-            ->latest('id')
+            ->oldest('id')
             ->paginate($per_page)->appends(request()->query());
         return view('products.index', [
             'products' => $products,
